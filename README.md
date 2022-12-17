@@ -1,43 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yohem</title>
+    <link rel="stylesheet" href="./public/css/style.css" />
 
-<h1 align="center">Hi 👋, I'm Yohem</h1>
-<h3 align="center">A passionate frontend/backend developer from France</h3>
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=yohemm&label=Profile%20views&color=0e75b6&style=flat" alt="yohemm" /> </p>
-
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=yohemm" alt="yohemm" /></a> </p>
-
-<p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
-
-- 🔭 I’m currently working on personnal project, a platform web to make the code more accessible. [LearnCode](https://github.com/yohemm/LearnCode)
-
-- 🌱 I’m currently learning NodeJs during my personnal time and learn in computer science University of Montpellier. **NodeJs**
-
-- 👨‍💻 All of my projects are available at [yohem.fr](yohem.fr)
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/yohem vaxelaire" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="yohem vaxelaire" height="30" width="40" /></a>
-<a href="https://instagram.com/yohem__" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="yohem__" height="30" width="40" /></a>
-<a href="https://discord.gg/#9425" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="#9425" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-
-Ho and I juste 18 years old but I learn programing since I have 13 years old! And I realy want to progress in this purview.
-
-<p style="width: 30%"><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=yohemm&show_icons=true&locale=en&layout=compact&theme=vision-friendly-dark" alt="yohemm" /></p>
-<p style="width: 30%"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=yohemm&theme=vision-friendly-dark&layout=compact" alt="yohemm" /></p>
-<p style="width: 30%"><img thalign="right" src="https://github-readme-stats.vercel.app/api?username=yohemm&show_icons=true&count_private=true&theme=vision-friendly-dark&locale=en&layout=compact" alt="githu-readme-stats" /></p>
-
-I not use GitHub every days or week, but I have learn gitHub with git bash or cmd. I think I can understand and make a medium commande without great difficulty. 
-
-![Ashutosh's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=yohemm&custom_title=My%20Activity%20on%20GitHub&hide_border=true&theme=xcode)
----
-
-### :zap: Recent Activity
-
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#3](https://github.com/yohemm/yohemm/pull/3) in [yohemm/yohemm](https://github.com/yohemm/yohemm)
-<!--END_SECTION:activity-->
----
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="photo-profile">
+            <a href="index.html"
+              ><img src="" alt="photo de profile de Yohem"
+            /></a>
+          </li>
+          <li class="name hide"><a href="index.html">Yohem</a></li>
+          <li class="github">
+            <a href="https://github.com/yohemm"
+              target="_blank"><i class="devicon-github-original colored"></i
+              ><span>Mon GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="intro">
+        <h1>Yohem Vaxelaire</h1>
+        <h2>Dévellopeur Back-end.</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
+          vero ipsa dolor aut ea libero cum eaque repellat ex. Quis?
+        </p>
+        <div><a href="#contact-me" class="contact-btn">Me Contacter</a></div>
+      </div>
+    </header>
+    <main>
+      <section id="about-me">
+        <h3>A propos de moi</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit soluta
+          quia repellendus modi excepturi temporibus incidunt sequi quae
+          doloribus recusandae nihil deleniti quibusdam cupiditate enim
+          necessitatibus perferendis veritatis odio id dolor illo omnis velit
+          et, voluptates facilis. At incidunt possimus aliquid consequatur quia?
+          Minus alias ipsum quam deserunt, animi deleniti.
+        </p>
+      </section>
+      <section id="skills">
+        <div id="main-skills" class="container-skills">
+          <div id="back-skills">
+            <h2>Back-end</h2>
+            <div class="all-section-skill-container">
+              <div class="skill-container php">
+                <i class="devicon-php-plain colored"></i>
+                <p>PHP</p>
+              </div>
+              <span id="vert"></span>
+              <span id="horiz"></span>
+              <div class="skill-container node">
+                <i class="devicon-nodejs-plain colored"></i>
+                <p>Node JS</p>
+              </div>
+              <div class="skill-container mysql">
+                <i class="devicon-mysql-plain colored"></i>
+                <p>MySql</p>
+              </div>
+            </div>
+          </div>
+          <span></span>
+          <div id="front-skills">
+            <h2>Front-end</h2>
+            <div class="all-section-skill-container">
+              <span id="anim"></span>
+              <div class="skill-container js">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+              </div>
+              <span></span>
+              <div class="skill-container css">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="used-skills" class="container-skills">
+          <h2>J'ai pu travaillez avec</h2>
+          <div class="all-section-skill-container">
+            <div class="skill-container">
+              <i class="devicon-vuejs-plain colored"></i>
+              <p>VueJS</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-react-original colored"></i>
+              <p>React</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-typescript-plain colored"></i>
+              <p>TypeScript</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-express-original colored"></i>
+              <p>Express</p>
+            </div>
+          </div>
+        </div>
+        <div id="tools-skills" class="container-skills">
+          <h2>J'ai utilisé ses outils</h2>
+          <div class="all-section-skill-container">
+            <div class="skill-container">
+              <i class="devicon-git-plain colored"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-github-original colored"></i>
+              <p>GitHub</p>
+            </div>
+          </div>
+        </div>
+        <div id="service-skills" class="container-skills">
+          <h2>J'ai utilisé ses service</h2>
+          <div class="all-section-skill-container">
+            <div class="skill-container">
+              <img src="" alt="Vercel" />
+              <p>Vercel</p>
+            </div>
+          </div>
+        </div>
+        <div id="unweb-skills" class="container-skills">
+          <h2>Mes compétence (hors web)</h2>
+          <div class="all-section-skill-container">
+            <div class="skill-container">
+              <i class="devicon-python-plain colored"></i>
+              <p>Python</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-csharp-plain colored"></i>
+              <p>C#</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <p>C++</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-java-plain colored"></i>
+              <p>Java</p>
+            </div>
+            <div class="skill-container">
+              <i class="devicon-r-original colored"></i>
+              <p>R/R studio</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="pro">
+        <h2>Mes Expérences proffessionelle</h2>
+        <projetPro name="" imgs="" />
+        <div>
+          <p>Location de Maison</p>
+        </div>
+      </section>
+      <section id="projet-perso">
+        <h2>Mes Projet Personelles</h2>
+        <projetPers name="Site d'apprentissage au dév web" imgs="url,url" />
+      </section>
+      <section id="formation">
+        <h2>Fromations</h2>
+        <formation titre="" date="" desc="" />
+      </section>
+      <section id="contact-me">
+        <progress max="2" value="0">1</progress>
+        <form action="">
+          <fieldset>
+            <div class="form-group">
+              <label for="nom">Votre nom</label>
+              <input type="text" name="nom" id="nom" required />
+              <span class="err"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Votre email</label>
+              <input type="email" name="email" id="email" required />
+              <span class="err"></span>
+            </div>
+          </fieldset>
+          <div class="form-group">
+            <label for="message">Votre message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+            <span class="err"></span>
+          </div>
+          <div class="form-group btn">
+            <input type="submit" name="submit" id="submit" required />
+          </div>
+        </form>
+      </section>
+      <footer id="my-contact">
+        <address>
+          <ul>
+            <li><a href="" target="_blank">Linkedin</a></li>
+            <li><a href="" target="_blank">GitHub</a></li>
+            <li><a href="" target="_blank">Twitter</a></li>
+          </ul>
+        </address>
+      </footer>
+    </main>
+    <script src="formSys.js"></script>
+  </body>
+</html>
