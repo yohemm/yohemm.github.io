@@ -16,6 +16,9 @@
     scroll-behavior: smooth;
     font-size: 1.5rem;
 }
+body{
+    overflow-x: hidden;
+}
 main{
     margin: 0 5%;
 }
@@ -32,12 +35,6 @@ h3{
     font-size: 2rem;
 }
 
-main{
-    margin: 0 5%;
-}
-body{
-    overflow-x: hidden;
-}
 nav{
     z-index: 9999;
     position: fixed;
@@ -51,8 +48,13 @@ nav ul {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 nav ul li a {
     line-height: 2;
+}
+nav img{
+    width: 2rem;
+    transform: translateY(calc(calc(72px - 2rem)/2));
 }
 nav ul li.hide { 
     transform: translate(0, -2rem);
@@ -194,13 +196,13 @@ section#about-me::after{
 #main-skills .css{
     bottom: 0;
 }
-#back-skills span#horiz,
-#back-skills span#vert,
+#main-skills span::before,
+#back-skills span.vert,#back-skills span.horiz,
 #front-skills span{
     position: absolute;
     background: var(--black);
 }
-#back-skills span#vert,
+#back-skills span.vert,
 #front-skills span{
     top: calc(2rem + 1.5rem + 10px);
     height: calc(100% - 2*calc(2rem + 1.5rem + 10px));
@@ -208,14 +210,25 @@ section#about-me::after{
     right: 50%;
     left: 50%;
 }
-#back-skills span#horiz{
+#back-skills span.vert::before,
+#front-skills span.vert::before{
+    content: "";
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 20px;height: 20px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+#back-skills span.horiz{
     top: 50%;
     bottom: 50%;
     right: 50%;
     height: 4px;
     width: 29%;
 }
-#front-skills span#anim{
+#front-skills span.anim{
     position: absolute;
     z-index: 0;
     width: 150%;
