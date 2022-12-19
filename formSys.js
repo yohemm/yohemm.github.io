@@ -3,6 +3,7 @@ const formGroups = document.querySelectorAll(".form-group")
 const progressbar = document.querySelector('progress');
 const nav = document.querySelector('nav');
 const name = nav.querySelector('.name');
+const github = nav.querySelector('.github');
 let sub = document.querySelector('input[type="submit"]');
 let contentInputs = {}; 
 progressbar.max = formGroups.length - 1;
@@ -10,12 +11,14 @@ progressbar.max = formGroups.length - 1;
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let input
 window.addEventListener('scroll', (event) => {
-  if(window.scrollY > 0) {
+  if(window.scrollY > 90) {
     nav.classList.add('nav-sticked');
     name.classList.remove('hide')
+    github.classList.add('hide')
   }else{
     nav.classList.remove('nav-sticked');
     name.classList.add('hide')
+    github.classList.remove('hide')
   }
 });
 document.addEventListener('DOMContentLoaded', (e) => {

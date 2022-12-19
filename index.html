@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js" defer></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" defer></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js" defer></script>
+    <script src="./app.js" defer type="text/babel"></script>
   </head>
   <body>
     <header>
@@ -43,7 +47,7 @@
     </header>
     <main>
       <section id="about-me">
-        <h3>A propos de moi</h3>
+        <h2>A propos de moi</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit soluta
           quia repellendus modi excepturi temporibus incidunt sequi quae
@@ -54,9 +58,10 @@
         </p>
       </section>
       <section id="skills">
+        <h2>Mes compétences</h2>
         <div id="main-skills" class="container-skills">
           <div id="back-skills">
-            <h2>Back-end</h2>
+            <h3>Back-end</h3>
             <div class="all-section-skill-container">
               <div class="skill-container php">
                 <i class="devicon-php-plain colored"></i>
@@ -76,7 +81,7 @@
           </div>
           <span></span>
           <div id="front-skills">
-            <h2>Front-end</h2>
+            <h3>Front-end</h3>
             <div class="all-section-skill-container">
               <span class="anim"></span>
               <div class="skill-container js">
@@ -92,7 +97,7 @@
           </div>
         </div>
         <div id="used-skills" class="container-skills">
-          <h2>J'ai pu travaillez avec</h2>
+          <h3>J'ai pu travaillez avec</h3>
           <div class="all-section-skill-container">
             <div class="skill-container">
               <i class="devicon-vuejs-plain colored"></i>
@@ -113,7 +118,7 @@
           </div>
         </div>
         <div id="tools-skills" class="container-skills">
-          <h2>J'ai utilisé ses outils</h2>
+          <h3>J'ai utilisé ses outils</h3>
           <div class="all-section-skill-container">
             <div class="skill-container">
               <i class="devicon-git-plain colored"></i>
@@ -126,7 +131,7 @@
           </div>
         </div>
         <div id="service-skills" class="container-skills">
-          <h2>J'ai utilisé ses service</h2>
+          <h3>J'ai utilisé ses service</h3>
           <div class="all-section-skill-container">
             <div class="skill-container">
               <img src="" alt="Vercel" />
@@ -135,7 +140,7 @@
           </div>
         </div>
         <div id="unweb-skills" class="container-skills">
-          <h2>Mes compétence (hors web)</h2>
+          <h3>Mes compétence (hors web)</h3>
           <div class="all-section-skill-container">
             <div class="skill-container">
               <i class="devicon-python-plain colored"></i>
@@ -162,10 +167,10 @@
       </section>
       <section id="pro">
         <h2>Mes Expérences proffessionelle</h2>
-        <projetPro name="" imgs="" />
-        <div>
-          <p>Location de Maison</p>
+        <div id="reactPro">
+
         </div>
+        <ProjetPro name="Location de Maison" imgsLink="" >Ici est la descripption</ProjetPro>
       </section>
       <section id="projet-perso">
         <h2>Mes Projet Personelles</h2>

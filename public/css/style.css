@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lora&family=Montserrat:ital@1&display=swap');
 :root {
     --white : rgb(240, 232, 232);
     --black : rgb(27, 26, 26);
     --gray : rgb(209, 200, 200);
     --linearGray : linear-gradient(to right, transparent 50%, rgb(124, 124, 124) 50%, rgba(124, 124, 124, 0.278));
 }
-
 *, ::after, ::before{
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +16,9 @@
     scroll-behavior: smooth;
     font-size: 1.5rem;
 }
+p, span, div {
+    font-family: 'Montserrat', sans-serif;
+}
 body{
     overflow-x: hidden;
 }
@@ -24,15 +27,21 @@ main{
 }
 a{
     color: var(--black);
+    font-family: 'Antic Didone', serif;
+    font-weight: 700;
 }
 h1{
     font-size: 4rem;
+    font-family: 'Antic Didone', serif;
+    font-weight: 100;
 }
 h2{
     font-size: 3rem;
+    font-family: 'Antic Didone', serif;
 }
 h3{
     font-size: 2rem;
+    font-family: 'Antic Didone', serif;
 }
 
 nav{
@@ -56,14 +65,23 @@ nav img{
     width: 2rem;
     transform: translateY(calc(calc(72px - 2rem)/2));
 }
-nav ul li.hide { 
-    transform: translate(0, -2rem);
+nav ul li.name.hide { 
+    transform: translate(0, -2.1rem);
 }
 nav ul li.name { 
     transition: transform 0.2s ease-in;
 }
 nav i {
     font-size: 2rem;
+}
+nav li.github{
+    transition: transform 0.2s ease-in;
+}
+nav li.github.hide{
+    transform: translate(221px, 0rem);
+}
+nav li.github:hover{
+    transform: translate(0, 0rem);
 }
 
 .nav-sticked{
@@ -78,27 +96,49 @@ nav i {
     width: 40%;
     min-height: 100vh;
 }
+#intro h2{
+    font-size: 1.8rem ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+#intro div{
+    text-align: center;
+
+}
+#intro div a{
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+
+}
 
 section{
     min-height: 60vh;
     margin-bottom: 40vh;
 }
 section h2{
-    margin-left: 22px;
+    margin-left: 6vw;
     position: relative;
-    
-
+    line-height: 1.5;
 }
 section h2::before{
     position: absolute;
-    top: 0.7rem;
-    left: -22px;
+    top: 1.5rem;
+    left: -6vw;
     content: "";
-    width: 20px;
-    height: 2rem;
+    width: 6vw;
+    height: 1.5rem;
 
     background: linear-gradient(to left, #000 70%,  #00000000);
 
+}
+#about-me h2{
+    margin-left: 0 ;
+}
+#about-me h2::before{
+    content: none;
+    
 }
 section#about-me{
     position: relative;
@@ -116,13 +156,8 @@ section#about-me::after{
     height: 100%;
 }
 
-#main-skills h2{
-    margin-left: 0 ;
+#main-skills h3{
     text-align: center;
-}
-#main-skills h2::before{
-    content: none;
-    
 }
 
 #main-skills #back-skills .all-section-skill-container,
@@ -265,6 +300,39 @@ section#about-me::after{
 #main-skills #back-skills, #main-skills #front-skills{
     width: 40%;
 }
+
+
+.projet-pro{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    min-height: 40vh;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+.projet-pro h4{
+    text-align: center;
+}
+.projet-pro .images-container{
+    position: absolute;
+    top: 0;bottom: 0;left: 0;right: 0;
+}
+.projet-pro .images-container .images-pro{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projet-pro p, .projet-pro h4{
+    z-index: 2;
+}
+
+
 progress{
     width: 100%;
 }
