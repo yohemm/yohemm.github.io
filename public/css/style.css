@@ -64,6 +64,12 @@ nav ul li a {
 nav img{
     width: 2rem;
     transform: translateY(calc(calc(72px - 2rem)/2));
+    transition: border-radius 0.2s ease-in ;
+
+}
+nav img.down{
+    border-radius: 50%;
+
 }
 nav ul li.name.hide { 
     transform: translate(0, -2.1rem);
@@ -308,10 +314,12 @@ section#about-me::after{
     background-repeat: no-repeat;
     background-size: cover;
     /* background-attachment: fixed; */
-    min-height: 40vh;
+    min-height: 400px;
+    height: 70vh;
     margin-bottom: 5vh;
     border-radius: 5px;
     border: 1px solid var(--black);
+    padding: 10px;
 }
 .projet-pro h4{
     text-align: center;
@@ -319,17 +327,61 @@ section#about-me::after{
 .projet-pro .images-container{
     position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
+    overflow: hidden;
 }
 .projet-pro .images-container .images-pro{
     position: absolute;
-    width: 40px;
-    height: 60px;
+    min-width: 40%;
+    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid var(--black);
 }
-.projet-pro p, .projet-pro h4{
-    z-index: 2;
+.projet-pro .text {
+}
+.projet-pro .text div{
+    display: flex;
+}
+
+.projet-pro h4{
+    margin: 0 auto;
+}
+.projet-pro p , .projet-pro h4 {
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.projet-pro .images-container .images-pro.i0{
+    transform: rotateZ(10deg);
+    top: 5%;
+    left: 3%;
+}
+.projet-pro .images-container .images-pro.i1{
+    transform: rotateZ(-15deg);
+    bottom: 10%;
+    right: 20%;
+}
+.projet-pro .images-container .images-pro.i2{
+    transform: rotateZ(30deg);
+    bottom: 10%;
+    right: 4%;
+}
+.projet-pro .images-container .images-pro.i3{
+    transform: rotateZ(30deg);
+    bottom: 9%;
+    right: 70%;
+}
+.projet-pro .images-container .images-pro.i4{
+    transform: rotateZ(30deg);
+    bottom: 40%;left: 10%;
+}
+.projet-pro .images-container .images-pro.i5{
+    transform: rotateZ(30deg);
+    bottom: 90%;
+    right: 20%;;
 }
 
 
@@ -358,6 +410,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
+    transition: all 1s ease;
     background-image:
 	   -webkit-linear-gradient(-45deg, 
 	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 

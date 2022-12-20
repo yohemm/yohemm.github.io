@@ -4,6 +4,7 @@ const progressbar = document.querySelector('progress');
 const nav = document.querySelector('nav');
 const name = nav.querySelector('.name');
 const github = nav.querySelector('.github');
+const logo = nav.querySelector('img');
 let sub = document.querySelector('input[type="submit"]');
 let contentInputs = {}; 
 progressbar.max = formGroups.length - 1;
@@ -15,10 +16,12 @@ window.addEventListener('scroll', (event) => {
     nav.classList.add('nav-sticked');
     name.classList.remove('hide')
     github.classList.add('hide')
+    logo.classList.add('down')
   }else{
     nav.classList.remove('nav-sticked');
     name.classList.add('hide')
     github.classList.remove('hide')
+    logo.classList.remove('down')
   }
 });
 document.addEventListener('DOMContentLoaded', (e) => {
