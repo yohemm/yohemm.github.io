@@ -37,15 +37,19 @@ class ProjetPro extends React.Component {
 class ProjetPerso extends React.Component {
     constructor(props){
         super(props);
+        this.listImgs = props.imgsLink.split(',');
+        console.log(this.listImgs)
     }
     render(){
         
         return <div className="projet-pers">
-            <div className="Front-card">
-                <h4>{this.props.name}</h4>
-            </div>
-            <div>
-                <p>{this.props.children}</p>
+            <div className="card">
+                <div className="front-card face-card" style={{backgroundImage: "url("+ this.listImgs[0]+")"}}>
+                    <h4>{this.props.name}</h4>
+                </div>
+                <div className="back-card face-card" style={this.listImgs.length >= 1?{backgroundImage: "url("+ this.listImgs[1]+")"}:{backgroundImage: "url("+ this.listImgs[0]+")"}}>
+                    <p>{this.props.children}</p>
+                </div>
             </div>
         </div>
     }
@@ -57,13 +61,26 @@ class Formation extends React.Component {
     }
     render(){
         
-        return <div className="Formation">
-                <h4>{this.props.name}</h4>
-                <p>{this.props.date}</p>
-                <p>{this.props.children}</p>
+        return <div className="formation">
+                <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" className="svg-animate"> 
+                    <path fill="none" d="M0,0 L0,100"/>
+                    <path fill="none" d="M0,100 L100,100" />
+                    <path fill="none" d="M100,100 L100,0" />
+                    <path fill="none" d="M100,0 0,0" />
+                </svg>
+                <div className="text">
+                    <h4>{this.props.name}</h4>
+                    <p className="date">{this.props.date}</p>
+                    <p className="desc">{this.props.children}</p>
+                </div>
         </div>
     }
 }
-ReactDOM.render(<ProjetPro name="Location de Maison" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png,./public/assets/JDD/2.png,./public/assets/JDD/3.png,./public/assets/JDD/0.png" >Ici est la descripption</ProjetPro>, document.querySelector('#pro #reactPro'))
-ReactDOM.render(<ProjetPerso name="I Don't know" >Ici est la descripption</ProjetPerso>, document.querySelector('#reactPers'))
-ReactDOM.render(<Formation name="Auto-didacte" date="2016-2022">Ici est la descripption</Formation>, document.querySelector('#reactForma'))
+ReactDOM.render(<ProjetPro name="Location de Maison" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png,./public/assets/JDD/2.png,./public/assets/JDD/3.png,./public/assets/JDD/0.png" >Ici est la descripption</ProjetPro>, document.querySelector('#pro #react-pro'))
+ReactDOM.render(<ProjetPerso name="I Don't know" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png">Ici est la descripption</ProjetPerso>, document.querySelector('#react-pers'))
+ReactDOM.render(<Formation name="Auto-didacte" date="2016-2022">Ici est la descripption</Formation>, document.querySelector('#react-forma'))
+const vsgAnim = document.querySelector(".svg-animate");
+for (let i = 0; i < vsgAnim.children.length; i++) {
+  vsgAnim.children[i].style.animationDelay = `${i * 0.25}s`
+  vsgAnim.children[i].classList.add('path')
+}

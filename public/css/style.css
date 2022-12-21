@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lora&family=Montserrat:ital@1&display=swap');
 :root {
     --white : rgb(240, 232, 232);
+    --white-less-opacity : rgba(240, 232, 232, 0.348);
     --black : rgb(27, 26, 26);
     --gray : rgb(209, 200, 200);
     --linearGray : linear-gradient(to right, transparent 50%, rgb(124, 124, 124) 50%, rgba(124, 124, 124, 0.278));
@@ -165,6 +166,9 @@ section#about-me::after{
 #main-skills h3{
     text-align: center;
 }
+#main-skills h3::before{
+    content: none!important;
+}
 
 #main-skills #back-skills .all-section-skill-container,
 #main-skills #front-skills .all-section-skill-container{
@@ -279,9 +283,22 @@ section#about-me::after{
     left: -100%;
     background: linear-gradient(to left, transparent 90%,  var(--black) 90%, var(--black));
     background-size: 200%;
-    animation: backToFrront 3s 0.5s infinite ease-in-out;
+    animation: backToFront 3s 0.5s infinite ease-in-out;
 }
-
+section#skills h3{
+    position: relative;
+}
+section#skills h3::before{
+    position: absolute;
+    bottom: -10px;
+    right: 15px;left: 15px;
+    content: "";
+    width: 25vw;
+    height: 8px;
+    background-image: linear-gradient(to bottom, transparent 50%,  var(--black) 50%, var(--black));
+    background-size: 100% 200%;
+    animation: moveToUp 5s infinite ease;
+}
 .skill-container{
     margin: 0 15px;
     text-align: center;
@@ -321,9 +338,28 @@ section#about-me::after{
     border: 1px solid var(--black);
     padding: 10px;
 }
+.projet-pro .text{
+    backdrop-filter: blur(0.8px);
+    background-color: var(--white-less-opacity);
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+.projet-pro .text div{
+    display: flex;
+}
+
 .projet-pro h4{
     text-align: center;
+    margin: 0 auto;
 }
+.projet-pro p , .projet-pro h4 {
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .projet-pro .images-container{
     position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
@@ -336,24 +372,9 @@ section#about-me::after{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
     border: 1px solid var(--black);
 }
-.projet-pro .text {
-}
-.projet-pro .text div{
-    display: flex;
-}
-
-.projet-pro h4{
-    margin: 0 auto;
-}
-.projet-pro p , .projet-pro h4 {
-    backdrop-filter: blur(10px);
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
 .projet-pro .images-container .images-pro.i0{
     transform: rotateZ(10deg);
     top: 5%;
@@ -382,6 +403,91 @@ section#about-me::after{
     transform: rotateZ(30deg);
     bottom: 90%;
     right: 20%;;
+}
+
+.projet-pers .card{
+    position: relative;
+    transform-style: preserve-3d;
+    border: 4px solid tomato;
+    transition: transform 0.2s ease-in-out;
+    background: var(--gray);
+    border-radius: 5px;
+    width: 40vw;
+    height: 200px;
+    margin: 0 5%;
+}
+.projet-pers:hover .card{
+    transform: rotateY(180deg);
+}
+.projet-pers .card .face-card{
+    position: absolute;
+    top: 0;bottom: 0;right: 0;left: 0;
+    backface-visibility: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.projet-pers .card .back-card p,
+.projet-pers .card .front-card h4{
+    margin: 15px;
+    margin: 0 auto;
+    backdrop-filter: blur(2px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.projet-pers .card .back-card{
+    transform: rotateY(180deg);
+}
+.projet-pers .card .back-card p{
+    position: absolute;
+    bottom: 15px;left: 15px;
+}
+.projet-pers .card .front-card{
+    display: flex;
+    transform: ;
+}
+.projet-pers .card .front-card h4{
+    height: 2rem;
+    line-height: 0.9;
+}
+
+section#formation #react-forma{
+    display: flex;
+}
+section#formation #react-forma .formation{
+    position: relative;
+    background: var(--gray);
+    padding: 10px;
+    /* SvG a changer aussi pour br */
+    border-radius: 10px;
+    
+    background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 9px) calc(100% - 9px) no-repeat,
+            linear-gradient(to bottom right, #FF512F, #DD2476);    
+}
+section#formation #react-forma .formation .text{
+    position: relative;
+    z-index: 3; 
+}
+section#formation #react-forma .formation svg{
+    /* .formation a changer aussi pour br */
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 0px;bottom: 0px;right: 0px;left: 0px;
+    z-index: 1;
+}
+section#formation #react-forma .formation svg path{
+    stroke-width: 10px;
+    vector-effect: non-scaling-stroke;
+    stroke: #fff;
+}
+.path {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 400;
+    animation: progress 8s linear forwards infinite;
 }
 
 
@@ -508,7 +614,7 @@ footer address ul {
     display: flex;
     justify-content: space-around;
 }
-@keyframes backToFrront {
+@keyframes backToFront {
     0%{
         background-position: 220%;
     }
@@ -518,4 +624,27 @@ footer address ul {
     100%{
         background-position: 220%;
     }
+}
+@keyframes moveToUp {
+    0%{
+        background-position-y: 0%;
+    }
+    10%{
+        background-position-y: 0%;
+    }
+    45%{
+        background-position-y: 100%;
+    }
+    65%{
+        background-position-y: 100%;
+    }
+    100%{
+        background-position-y: 200%;
+    }
+}
+  
+@keyframes progress {
+    to {
+    stroke-dashoffset: 0;
+  }
 }
