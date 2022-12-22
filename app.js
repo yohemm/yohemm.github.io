@@ -76,11 +76,15 @@ class Formation extends React.Component {
         </div>
     }
 }
-ReactDOM.render(<ProjetPro name="Location de Maison" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png,./public/assets/JDD/2.png,./public/assets/JDD/3.png,./public/assets/JDD/0.png" >Ici est la descripption</ProjetPro>, document.querySelector('#pro #react-pro'))
-ReactDOM.render(<ProjetPerso name="I Don't know" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png">Ici est la descripption</ProjetPerso>, document.querySelector('#react-pers'))
-ReactDOM.render(<Formation name="Auto-didacte" date="2016-2022">Ici est la descripption</Formation>, document.querySelector('#react-forma'))
-const vsgAnim = document.querySelector(".svg-animate");
-for (let i = 0; i < vsgAnim.children.length; i++) {
-  vsgAnim.children[i].style.animationDelay = `${i * 0.25}s`
-  vsgAnim.children[i].classList.add('path')
+
+ReactDOM.render(<ProjetPro name="Location de Maison" imgsLink="./public/assets/location/0.png,./public/assets/location/1.png,./public/assets/location/2.png" >Ici est la descripption</ProjetPro>, document.querySelector('#pro #react-pro'))
+ReactDOM.render(<div><ProjetPerso name="Journal Du Dév" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png">Ici est la descripption</ProjetPerso><ProjetPerso name="Histoire de la programmation" imgsLink="./public/assets/histoirProg/0.png,./public/assets/histoirProg/1.png">Site Web avec mini-jeux sur l'histoire de la programmation</ProjetPerso></div>, document.querySelector('#react-pers'))
+ReactDOM.render(<div><Formation name="Auto-didacte" date="2016-2022">En apprentissage permanent...</Formation><Formation name="baccalauréat général" date="2020-2022"><p>( NSI, Maths Physique)</p> <p>Mention Assez bien</p></Formation><Formation name="BUT Informatique" date="2022-2024">En cours de formation...</Formation></div>, document.querySelector('#react-forma'))
+const svgAnims = document.querySelectorAll(".svg-animate");
+for(let svgAnim of svgAnims){
+    console.log(svgAnim)
+    for (let i = 0; i < svgAnim.children.length; i++) {
+    svgAnim.children[i].style.animationDelay = `${i * 0.25}s`
+    svgAnim.children[i].classList.add('path')
+    }
 }

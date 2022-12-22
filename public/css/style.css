@@ -405,6 +405,36 @@ section#skills h3::before{
     right: 20%;;
 }
 
+
+
+
+#projet-perso #react-pers > div{
+
+    display: inline-grid;
+    
+    grid-auto-columns: minmax(125px, auto);
+    grid-gap: .5rem;
+    width: 100%;
+
+}
+
+#projet-perso #react-pers > div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+  }
+  
+  @media screen and (max-width: 992px){
+     
+    #projet-perso #react-pers > div{
+        grid-template-columns: 1fr;
+     }
+  }
+.projet-pers{
+    height: 400px;
+    padding: 15px;
+}
 .projet-pers .card{
     position: relative;
     transform-style: preserve-3d;
@@ -412,9 +442,7 @@ section#skills h3::before{
     transition: transform 0.2s ease-in-out;
     background: var(--gray);
     border-radius: 5px;
-    width: 40vw;
-    height: 200px;
-    margin: 0 5%;
+    height: 100%;
 }
 .projet-pers:hover .card{
     transform: rotateY(180deg);
@@ -446,16 +474,25 @@ section#skills h3::before{
 }
 .projet-pers .card .front-card{
     display: flex;
-    transform: ;
 }
 .projet-pers .card .front-card h4{
     height: 2rem;
     line-height: 0.9;
 }
 
-section#formation #react-forma{
-    display: flex;
-}
+section#formation #react-forma > div{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  
+  @media screen and (max-width: 992px){
+     
+    section#formation #react-forma > div{
+        grid-template-columns: 1fr;
+     }
+  }
 section#formation #react-forma .formation{
     position: relative;
     background: var(--gray);

@@ -8,7 +8,7 @@ Portfolio simple.
     Projet en cours de développement, désolé des possibles problemes
 ---
 ## Outils
-    Frontend : JavaScript
+    Frontend : JavaScript, React JS
 ---
 ## Support
 
