@@ -4,7 +4,8 @@
     --white-less-opacity : rgba(240, 232, 232, 0.348);
     --black : rgb(27, 26, 26);
     --gray : rgb(209, 200, 200);
-    --linearGray : linear-gradient(to right, transparent 50%, rgb(124, 124, 124) 50%, rgba(124, 124, 124, 0.278));
+    --linearGray : linear-gradient(45deg, transparent 50%, rgb(124, 124, 124) 50%, rgba(124, 124, 124, 0.278));
+    --linearGreen : linear-gradient(45deg, #85FFBD 0%, #FFFB7D 50%);
 }
 *, ::after, ::before{
     box-sizing: border-box;
@@ -17,6 +18,35 @@
     scroll-behavior: smooth;
     font-size: 1.5rem;
 }
+.bg .filter-bg:nth-child(even){
+    background-image: linear-gradient(255deg, transparent, white 60%), 
+    radial-gradient(ellipse at center, #79a0ed 20%, #ff7d95 60%, transparent 80%);
+}
+.bg .filter-bg:nth-child(odd){
+    background-image: linear-gradient(45deg, transparent, white 60%),
+    radial-gradient(ellipse at center, #85FFBD 20%, #FFFB7D 60%, transparent 80%);
+}
+.bg .filter-bg:nth-child(3n){
+    width: 1000px;height: 800px;
+}
+.bg .filter-bg:nth-child(3n+2){
+    width: 300px;height: 700px;
+}
+.bg .filter-bg:nth-child(3n+1){
+    width: 400px;height: 600px;
+}
+.bg .filter-bg{
+    background-size: 100% ;
+    background-repeat: no-repeat;  
+    position: absolute;
+    width: 500px;height: 500px;
+    z-index: -1;
+    filter: opacity(0.4) blur(90px) brightness(1.1) ;
+}
+.bg{
+    height: 0;
+    width: 0;
+}
 p, span, div {
     font-family: 'Montserrat', sans-serif;
 }
@@ -25,6 +55,7 @@ body{
 }
 main{
     margin: 0 5%;
+    backdrop-filter: blur(20px);
 }
 a{
     color: var(--black);
@@ -113,10 +144,18 @@ nav li.github:hover{
     text-align: center;
 
 }
-#intro div a{
+#intro div a.contact-btn{
+    transition: all 0.2s ease-in ;
     padding: 10px;
     border: 1px solid var(--black);
     border-radius: 4px;
+
+}
+#intro div a.contact-btn:hover{
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    color: var(--white);
+    background: var(--black);
 
 }
 
@@ -271,7 +310,7 @@ section#about-me::after{
     bottom: 50%;
     right: 50%;
     height: 4px;
-    width: 29%;
+    width: calc(50% - 140px);
 }
 #front-skills span.anim{
     position: absolute;
@@ -294,7 +333,7 @@ section#skills h3::before{
     right: 15px;left: 15px;
     content: "";
     width: 25vw;
-    height: 8px;
+    height: 4px;
     background-image: linear-gradient(to bottom, transparent 50%,  var(--black) 50%, var(--black));
     background-size: 100% 200%;
     animation: moveToUp 5s infinite ease;
@@ -438,7 +477,7 @@ section#skills h3::before{
 .projet-pers .card{
     position: relative;
     transform-style: preserve-3d;
-    border: 4px solid tomato;
+    border: 4px solid var(--black);
     transition: transform 0.2s ease-in-out;
     background: var(--gray);
     border-radius: 5px;
@@ -463,6 +502,7 @@ section#skills h3::before{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     padding: 10px;
     border-radius: 10px;
+    background-color: var(--white-less-opacity);
 }
 
 .projet-pers .card .back-card{
@@ -501,7 +541,9 @@ section#formation #react-forma .formation{
     border-radius: 10px;
     
     background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 9px) calc(100% - 9px) no-repeat,
-            linear-gradient(to bottom right, #FF512F, #DD2476);    
+            var(--linearGreen);   
+    background-color: #85FFBD;
+            
 }
 section#formation #react-forma .formation .text{
     position: relative;
@@ -517,7 +559,7 @@ section#formation #react-forma .formation svg{
     z-index: 1;
 }
 section#formation #react-forma .formation svg path{
-    stroke-width: 10px;
+    stroke-width: 15px;
     vector-effect: non-scaling-stroke;
     stroke: #fff;
 }
@@ -561,7 +603,7 @@ progress[value]::-webkit-progress-value {
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
-	   -webkit-linear-gradient(left, red, blue);
+	   var(--linearGreen);
 
     border-radius: 20px; 
     background-size: 35px 20px, 100% 100%, 100% 100%;
@@ -587,7 +629,7 @@ progress[value]::-webkit-progress-value::before {
   }
 
 input, textarea{
-    background: var(--gray);
+    background: var(--white);
     border-radius: 8px;
     resize: none;
     padding: 10px;
@@ -601,7 +643,7 @@ form .form-group{
     position: relative;
 }
 form .form-group:focus-within label, form .form-group.animation label{
-    top: 0;
+    top: -10px;
 }
 form .form-group label{
     position: absolute;
@@ -636,10 +678,17 @@ form .form-group .err{
     padding: 15px 60px;
     border: 3px solid var(--black);
     border-radius: 999px;
-    background-image: linear-gradient(to right, transparent 50%, rgb(107, 143, 95) 50%, rgb(64, 99, 56));
+    background-image: linear-gradient(45deg, transparent 50%, #85FFBD 50%, #FFFB7D);
     background-size: 200%;
     font-size: 2rem;
     cursor: pointer;
+}
+.form-group input[type="submit"]:disabled{
+    background-image: var(--linearGray);
+    cursor: default;
+}
+.form-group input[type="submit"]:disabled:hover{
+    color: var(--gray);
 }
 .form-group input[type="submit"]:hover {
     color: var(--black);

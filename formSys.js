@@ -13,6 +13,7 @@ const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+")
 let input
 window.addEventListener('scroll', (event) => {
   if(window.scrollY > 90) {
+    console.log(nav)
     nav.classList.add('nav-sticked');
     name.classList.remove('hide')
     github.classList.add('hide')
@@ -116,10 +117,8 @@ for (let i = 0; i < formGroups.length-1; i++) {
     }
     if(progressbar.value == progressbar.max){
       sub.disabled = false;
-      sub.style.backgroundImage = "";
     }else{
       sub.disabled = true;
-      sub.style.backgroundImage = "var(--linearGray)";
     }
   })
 }

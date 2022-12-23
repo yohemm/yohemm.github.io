@@ -10,7 +10,6 @@ class ProjetPro extends React.Component {
     constructor (props){
         super(props);
         this.listImgsprops = props.imgsLink.split(',');
-        console.log(this.listImgsprops)
         this.spanImager = [];
     }
     render(){
@@ -83,6 +82,7 @@ ReactDOM.render(<div><Formation name="Auto-didacte" date="2016-2022">En apprenti
 const svgAnims = document.querySelectorAll(".svg-animate");
 for(let svgAnim of svgAnims){
     console.log(svgAnim)
+    
     for (let i = 0; i < svgAnim.children.length; i++) {
     svgAnim.children[i].style.animationDelay = `${i * 0.25}s`
     svgAnim.children[i].classList.add('path')
