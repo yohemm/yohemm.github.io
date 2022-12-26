@@ -24,16 +24,16 @@
 }
 .bg .filter-bg:nth-child(odd){
     background-image: linear-gradient(45deg, transparent, white 60%),
-    radial-gradient(ellipse at center, #85FFBD 20%, #FFFB7D 60%, transparent 80%);
+    radial-gradient(ellipse at center, #85FFBD 20%, var(--black) 60%, transparent 80%);
 }
 .bg .filter-bg:nth-child(3n){
-    width: 1000px;height: 800px;
+    width: 80vw ;height: 60vh;
 }
 .bg .filter-bg:nth-child(3n+2){
-    width: 300px;height: 700px;
+    width: 20vw;height: 50vh;
 }
 .bg .filter-bg:nth-child(3n+1){
-    width: 400px;height: 600px;
+    width: 35vw;height: 40vh;
 }
 .bg .filter-bg{
     background-size: 100% ;
@@ -41,7 +41,7 @@
     position: absolute;
     width: 500px;height: 500px;
     z-index: -1;
-    filter: opacity(0.4) blur(90px) brightness(1.1) ;
+    filter: opacity(0.4) blur(90px) brightness(1.1) saturate(1.6);
 }
 .bg{
     height: 0;
@@ -49,6 +49,9 @@
 }
 p, span, div {
     font-family: 'Montserrat', sans-serif;
+}
+html{
+    overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
@@ -161,7 +164,12 @@ nav li.github:hover{
 
 section{
     min-height: 60vh;
-    margin-bottom: 40vh;
+    margin-bottom: max(40vh, 200px);
+}
+section:nth-last-of-type(1){
+    margin-bottom: 80px;
+}
+section {
 }
 section h2{
     margin-left: 6vw;
@@ -176,7 +184,13 @@ section h2::before{
     width: 6vw;
     height: 1.5rem;
 
-    background: linear-gradient(to left, #000 70%,  #00000000);
+    background: linear-gradient(to left, #000 35%,  #00000000 50%);
+    background-size: 200% 100%;
+    background-position-x: 100%;   
+
+}
+section h2:hover::before{
+    animation: h3Spacer 5s infinite ease alternate;
 
 }
 #about-me h2{
@@ -208,7 +222,8 @@ section#about-me::after{
 #main-skills h3::before{
     content: none!important;
 }
-
+.container-skills{
+}
 #main-skills #back-skills .all-section-skill-container,
 #main-skills #front-skills .all-section-skill-container{
     border-top: 1px solid var(--black);
@@ -324,19 +339,30 @@ section#about-me::after{
     background-size: 200%;
     animation: backToFront 3s 0.5s infinite ease-in-out;
 }
+section#skills .skill-title-container{
+    display: flex;
+}
 section#skills h3{
     position: relative;
+    width: auto;
+}
+section#skills #used-skills .container-skills:nth-child(2n) h3::before{
+    animation-delay: 0.5s;
+    animation-duration : 4.5s;
 }
 section#skills h3::before{
+    content: "";
     position: absolute;
     bottom: -10px;
     right: 15px;left: 15px;
-    content: "";
-    width: 25vw;
+    width: calc(100% - 30px);
     height: 4px;
     background-image: linear-gradient(to bottom, transparent 50%,  var(--black) 50%, var(--black));
     background-size: 100% 200%;
-    animation: moveToUp 5s infinite ease;
+    animation-name: moveToUp;
+    animation-duration : 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 .skill-container{
     margin: 0 15px;
@@ -699,7 +725,12 @@ form .form-group .err{
 footer address ul {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
+footer address a {
+    border-bottom: var(--black) 3px solid;
+}
+
 @keyframes backToFront {
     0%{
         background-position: 220%;
@@ -733,4 +764,33 @@ footer address ul {
     to {
     stroke-dashoffset: 0;
   }
+}
+
+@keyframes h3Spacer{
+    from{
+        background-position-x: 100%;
+    }
+    25%{
+        background-position-x: 85%;
+    }
+    50%{
+        background-position-x: 90%;
+    }
+    75%{
+        background-position-x: 70%;
+    }
+    to{
+        background-position-x: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    fieldset{
+        display: block;
+    }
+    input{
+        width: 80vw;
+    }
+    main{
+        margin: 0;
+    }
 }
