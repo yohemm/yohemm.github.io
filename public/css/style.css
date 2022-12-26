@@ -134,18 +134,23 @@ nav li.github:hover{
     padding-top: 10vh;
     margin: 0 3%;
     margin-top: 10vh;
-    width: 40%;
+    width: 60%;
     min-height: 100vh;
 }
 #intro h2{
     font-size: 1.8rem ;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
+    
+}
+#intro p{
+    font-size: 1rem;
+    
 }
 #intro div{
     text-align: center;
-
+    padding-top: 20px;
+    
 }
 #intro div a.contact-btn{
     transition: all 0.2s ease-in ;
@@ -159,7 +164,7 @@ nav li.github:hover{
     border-radius: 4px;
     color: var(--white);
     background: var(--black);
-
+    
 }
 
 section{
@@ -195,6 +200,9 @@ section h2:hover::before{
 }
 #about-me h2{
     margin-left: 0 ;
+}
+#about-me p{
+    font-size: 1rem;
 }
 #about-me h2::before{
     content: none;
@@ -374,6 +382,7 @@ section#skills h3::before{
 }
 .all-section-skill-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 5vh;    
 }
@@ -729,6 +738,10 @@ footer address ul {
 }
 footer address a {
     border-bottom: var(--black) 3px solid;
+    transition: border-bottom 0.2s ease-out;
+}
+footer address a:hover {
+    border-color: #fff;
 }
 
 @keyframes backToFront {
@@ -783,7 +796,7 @@ footer address a {
         background-position-x: 80%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     fieldset{
         display: block;
     }
@@ -793,4 +806,5 @@ footer address a {
     main{
         margin: 0;
     }
+    
 }

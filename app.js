@@ -80,9 +80,7 @@ ReactDOM.render(<ProjetPro name="Location de Maison" imgsLink="./public/assets/l
 ReactDOM.render(<div><ProjetPerso name="Journal Du Dév" imgsLink="./public/assets/JDD/0.png,./public/assets/JDD/1.png">Ici est la descripption</ProjetPerso><ProjetPerso name="Histoire de la programmation" imgsLink="./public/assets/histoirProg/0.png,./public/assets/histoirProg/1.png">Site Web avec mini-jeux sur l'histoire de la programmation</ProjetPerso></div>, document.querySelector('#react-pers'))
 ReactDOM.render(<div><Formation name="Auto-didacte" date="2016-2022">En apprentissage permanent...</Formation><Formation name="baccalauréat général" date="2020-2022"><p>( NSI, Maths Physique)</p> <p>Mention Assez bien</p></Formation><Formation name="BUT Informatique" date="2022-2024">En cours de formation...</Formation></div>, document.querySelector('#react-forma'))
 const svgAnims = document.querySelectorAll(".svg-animate");
-for(let svgAnim of svgAnims){
-    console.log(svgAnim)
-    
+for(let svgAnim of svgAnims){    
     for (let i = 0; i < svgAnim.children.length; i++) {
     svgAnim.children[i].style.animationDelay = `${i * 0.25}s`
     svgAnim.children[i].classList.add('path')

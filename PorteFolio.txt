@@ -1,0 +1,45 @@
+1 Couverture
+A propos de moi
+	18 ans
+	6 ans de programmation
+	passionner du mileu, peu importe le sujet(web, jeux,  hacking)
+	sensible a l'UI
+	référencement
+	
+Compétence
+	Best
+		Nodes-JS
+		PHP
+		JS
+	deja utiliser
+		Vue
+		React
+		TypeScript
+		Express
+		Python (pygame - Tkinter - pickle - socket)
+	Outil
+		Git
+		GitHub
+	Service
+		Vercel
+Exerpérence professionelle
+	Location de Hébergement
+Project perso
+	Journale du Dév
+	Histoire de la programmation
+	Jeux video RGP 2d
+Project non fini
+	
+Formation
+	Autodidacte
+	baccalauréat Général sécialité NSI MATH (Physiqueèchimie)
+Contact
+	email
+	nom
+	message
+Mes info
+
+TEXT INTRO
+Bonjour, je m'appelle Yohem VAXELAIRE et j'ai 18 ans. Je suis développeur informatique et j'ai 6 ans d'expérience en programmation. Je suis passionné par la technologie et j'aime explorer de nouvelles choses. Je suis capable de travailler sur différents sujets, allant du développement web aux jeux vidéo en passant par le piratage et la création d'interfaces utilisateur sensibles et optimisées pour le référencement (SEO). J'aime découvrir de nouvelles technologies et m'épanouir dans mon travail. Je suis déterminé à continuer à apprendre et à me développer en tant que développeur professionnel.
+OU  EN MOINS LONG
+Je m'appelle Yohem VAXELAIRE et j'ai 18 ans. Je suis développeur informatique avec 6 ans d'expérience. J'aime explorer de nouvelles technologies et m'épanouir dans mon travail. Je suis passionné par la technologie et capable de travailler sur différents sujets, allant du développement web aux jeux vidéo en passant par le piratage et la création d'interfaces utilisateur sensibles et optimisées pour le référencement (SEO). Je suis déterminé à continuer à apprendre et à me développer en tant que développeur professionnel.
