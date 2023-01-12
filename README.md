@@ -26,4 +26,4 @@ npm install
 
 ## Authors
 
-* **Yohem** - *Initial work* - [Your GitHub username](https://github.com/yohemm)
+* **Yohem** - *Initial work* - [Yohemm](https://github.com/yohemm)
